@@ -22,7 +22,7 @@ module.exports = {
  let  owners = ['782025091407282206']
 		const user = interaction.options.getMember('user')
     const input = interaction.options.getString('input')
-          if(!owners.includes(interaction.user.id)) return await interaction.editReply("helpppppppppppp please helppppppppppppp")
+          if(!owners.includes(interaction.user.id)) return await interaction.editReply("This command is not fully developed yet.")
 
       if(user.user.bot) return interaction.editReply({content :`You can't use this command with bot.`});
         if (isNaN(input)) return interaction.editReply({content :"Enter a valid amount."});
